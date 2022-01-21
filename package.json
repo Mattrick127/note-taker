@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Mattrick127/note-taker/issues"
   },
-  "homepage": "https://github.com/Mattrick127/note-taker#readme"
+  "homepage": "https://github.com/Mattrick127/note-taker#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
 }
