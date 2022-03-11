@@ -1,3 +1,4 @@
+const htmlRoutes = require('./routes/htmlRoutes');
 const express = require('express');
 const { test } = require('./db/db.json');
 
@@ -7,10 +8,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
-
-app.get('/api/test', (req, res) => {
-    res.json(test);
-});
+app.use('/', htmlRoutes);
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
